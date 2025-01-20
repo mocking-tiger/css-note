@@ -12,8 +12,6 @@ const slideUp = keyframes`
 `;
 
 const Wrapper2 = styled(Wrapper)<{ $isLast: boolean }>`
-  flex-direction: column;
-
   .div1 {
     width: 600px;
 

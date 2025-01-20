@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Wrapper } from "./Home";
+import { Wrapper } from "../Pages/Home";
 
 const Wrapper2 = styled(Wrapper)``;
 
