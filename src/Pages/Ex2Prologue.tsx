@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Wrapper } from "../Pages/Home";
+import { Wrapper } from "./Home";
 import { useEffect, useState } from "react";
 
 const Wrapper2 = styled(Wrapper)`
@@ -14,7 +14,7 @@ const Wrapper2 = styled(Wrapper)`
     transition: opacity 0.5s ease-in-out;
   }
 
-  h2:last-child {
+  h2:last-of-type {
     font-style: italic;
   }
 
@@ -100,7 +100,7 @@ export default function Prologue() {
       <h2>{`" ${p2.join("")} "`}</h2>
       <img
         style={{ opacity: p2.length === str3.length ? 1 : 0 }}
-        src="/assets/mystery.png"
+        src="/assets/Ex2/mystery.png"
         alt="mystery-man-picture"
       />
     </Wrapper2>

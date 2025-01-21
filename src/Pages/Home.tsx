@@ -37,8 +37,8 @@ export default function Home() {
   return (
     <Wrapper2>
       <div>
-        <Link to={"/01"}>01. we are</Link>
-        <Link to={"/02"}>02. prologue</Link>
+        <Link to={"/1"}>1. we are - 무한 슬라이더</Link>
+        <Link to={"/2"}>2. prologue - 웹소설 연출</Link>
       </div>
     </Wrapper2>
   );
