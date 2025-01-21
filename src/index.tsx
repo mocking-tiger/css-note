@@ -15,6 +15,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Pretendard-Regular',sans-serif;
   }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 const root = ReactDOM.createRoot(

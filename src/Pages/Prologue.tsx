@@ -3,6 +3,7 @@ import { Wrapper } from "../Pages/Home";
 import { useEffect, useState } from "react";
 
 const Wrapper2 = styled(Wrapper)`
+  flex-direction: column;
   gap: 30px;
   background-color: black;
   position: relative;
