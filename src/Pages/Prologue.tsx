@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 const Wrapper2 = styled(Wrapper)`
   gap: 30px;
   background-color: black;
+  position: relative;
+  overflow: hidden;
 
   h2 {
     color: white;
@@ -13,6 +15,22 @@ const Wrapper2 = styled(Wrapper)`
 
   h2:last-child {
     font-style: italic;
+  }
+
+  img {
+    width: 400px;
+    opacity: 0;
+    position: absolute;
+    bottom: 15%;
+    transition: opacity 1s ease-in-out;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 12px;
+
+    img {
+      bottom: 50px;
+    }
   }
 `;
 
@@ -79,6 +97,11 @@ export default function Prologue() {
       <h2>{`" ${p1.join("")} "`}</h2>
       <h2 style={{ opacity: isP1End ? 1 : 0 }}>{str2}</h2>
       <h2>{`" ${p2.join("")} "`}</h2>
+      <img
+        style={{ opacity: p2.length === str3.length ? 1 : 0 }}
+        src="/assets/mystery.png"
+        alt="mystery-man-picture"
+      />
     </Wrapper2>
   );
 }
