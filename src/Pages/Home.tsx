@@ -22,9 +22,10 @@ const Wrapper2 = styled(Wrapper)`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 10px;
 
     a {
-      width: 200px;
+      width: 400px;
 
       &:hover {
         text-decoration: underline;
@@ -39,6 +40,9 @@ export default function Home() {
       <div>
         <Link to={"/1"}>1. we are - 무한 슬라이더</Link>
         <Link to={"/2"}>2. prologue - 웹소설 연출</Link>
+        <Link to={"/3"}>
+          2. landing page clip - 영상이 재생되는 랜딩 페이지
+        </Link>
       </div>
     </Wrapper2>
   );
