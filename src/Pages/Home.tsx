@@ -11,9 +11,9 @@ export const Wrapper = styled.div`
 `;
 
 const Wrapper2 = styled(Wrapper)<{ $isLoaded?: boolean }>`
-  /* background: ${(props) =>
-    props.$isLoaded ? `url("/assets/library.jpg")` : "none"}; */
-  background-image: url("/assets/library.jpg");
+  background: ${(props) =>
+    props.$isLoaded ? `url("/assets/library.jpg")` : "none"};
+  // background-image: url("/assets/library.jpg");
   background-size: cover;
   background-position: center center;
 
@@ -69,32 +69,35 @@ export default function Home() {
 
   useEffect(() => {
     // Image 객체를 활용한 방법
-    // const img = new Image();
-    // img.src = "/assets/library.jpg";
-    // img.onload = () => {
-    //   setIsLoaded(true);
-    // };
+    const img = new Image();
+    img.src = "/assets/library.jpg";
+    img.onload = () => {
+      setIsLoaded(true);
+    };
 
     // setTimeOut을 활용한 방법
-    const timeout = setTimeout(() => {
-      setIsLoaded(false);
-    }, 1000);
+    // const timeout = setTimeout(() => {
+    //   setIsLoaded(false);
+    // }, 1000);
 
-    return () => clearTimeout(timeout);
+    // return () => clearTimeout(timeout);
   }, []);
 
   return (
     <>
-      {/* {!isLoaded && <LoadingScreen>Loading...</LoadingScreen>} */}
-      {isLoaded && (
+      {!isLoaded && (
         <LoadingScreen>
           <div className="spinner" />
           Loading...
         </LoadingScreen>
       )}
-      <Wrapper2
-      // $isLoaded={isLoaded}
-      >
+      {/* {isLoaded && (
+        <LoadingScreen>
+          <div className="spinner" />
+          Loading...
+        </LoadingScreen>
+      )} */}
+      <Wrapper2 $isLoaded={isLoaded}>
         <div>
           <Link to={"/1"}>1. we are - 무한 슬라이더</Link>
           <Link to={"/2"}>2. prologue - 웹소설 연출</Link>
