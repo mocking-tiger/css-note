@@ -104,7 +104,7 @@ export default function EmailAutoComplete() {
   return (
     <Wrapper2>
       <div className={`input-box ${isFocus ? "focused" : ""}`}>
-        <h6>이름</h6>
+        <h6>이메일</h6>
         <input
           type="email"
           value={value}
