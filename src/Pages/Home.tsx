@@ -41,8 +41,9 @@ export default function Home() {
         <Link to={"/1"}>1. we are - 무한 슬라이더</Link>
         <Link to={"/2"}>2. prologue - 웹소설 연출</Link>
         <Link to={"/3"}>
-          2. landing page clip - 영상이 재생되는 랜딩 페이지
+          3. landing page clip - 영상이 재생되는 랜딩 페이지
         </Link>
+        <Link to={"/4"}>4. email - 이메일 양식 자동완성</Link>
       </div>
     </Wrapper2>
   );

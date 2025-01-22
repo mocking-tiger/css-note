@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
 }
   *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Pretendard-Regular',sans-serif;
   }
@@ -19,6 +20,10 @@ const GlobalStyle = createGlobalStyle`
   a{
     text-decoration: none;
     color: inherit;
+  }
+
+  li{
+    list-style: none;
   }
 `;
 
