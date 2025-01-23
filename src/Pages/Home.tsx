@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Wrapper = styled.div`
   width: 100vw;
@@ -105,6 +105,7 @@ export default function Home() {
             3. landing page clip - 영상이 재생되는 랜딩 페이지
           </Link>
           <Link to={"/4"}>4. email - 이메일 양식 자동완성</Link>
+          <Link to={"/5"}>5. dynamic loading - 진행상황을 보여주는 로딩창</Link>
         </div>
       </Wrapper2>
     </>
