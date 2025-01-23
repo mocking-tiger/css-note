@@ -5,6 +5,7 @@ import Prologue from "./Pages/Ex2Prologue";
 import LandingClip from "./Pages/Ex3LandingClip";
 import EmailAutoComplete from "./Pages/Ex4EmailAutoComplete";
 import DynamicLoading from "./Pages/Ex5DynamicLoading";
+import WarningSlider from "./Pages/Ex6WarningSlider";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/3" element={<LandingClip />} />
         <Route path="/4" element={<EmailAutoComplete />} />
         <Route path="/5" element={<DynamicLoading />} />
+        <Route path="/6" element={<WarningSlider />} />
       </Routes>
     </BrowserRouter>
   );
