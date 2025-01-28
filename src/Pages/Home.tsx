@@ -107,6 +107,7 @@ export default function Home() {
           <Link to={"/4"}>4. email - 이메일 양식 자동완성</Link>
           <Link to={"/5"}>5. dynamic loading - 진행상황을 보여주는 로딩창</Link>
           <Link to={"/6"}>6. warning - 무한 슬라이더(가로)</Link>
+          <Link to={"/7"}>7. wait and search - 입력값 기다렸다가 검색</Link>
         </div>
       </Wrapper2>
     </>
