@@ -21,7 +21,7 @@ const Wrapper2 = styled(Wrapper)`
     position: relative;
 
     input {
-      width: 400px;
+      width: 380px;
       margin-bottom: 50px;
       padding: 10px;
 
@@ -46,6 +46,7 @@ const Wrapper2 = styled(Wrapper)`
 
   .name-box {
     width: 400px;
+    padding: 0 10px;
 
     h6 {
       width: 100%;

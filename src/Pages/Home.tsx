@@ -12,13 +12,11 @@ export const Wrapper = styled.div`
 
 const Wrapper2 = styled(Wrapper)<{ $isLoaded?: boolean }>`
   background: ${(props) =>
-    props.$isLoaded ? `url("/assets/library.jpg")` : "none"};
-  // background-image: url("/assets/library.jpg");
+    props.$isLoaded ? `url("/assets/sketch.jpg")` : "none"};
   background-size: cover;
   background-position: center center;
 
   div {
-    background: rgba(255, 255, 255, 0.6);
     width: 100%;
     height: 100%;
     display: flex;
@@ -28,7 +26,7 @@ const Wrapper2 = styled(Wrapper)<{ $isLoaded?: boolean }>`
     gap: 10px;
 
     a {
-      width: 400px;
+      width: 350px;
 
       &:hover {
         text-decoration: underline;
