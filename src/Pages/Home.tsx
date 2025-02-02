@@ -23,13 +23,16 @@ const Wrapper2 = styled(Wrapper)<{ $isLoaded?: boolean }>`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 
     a {
+      font-family: "Dongle";
+      font-size: 26px;
       width: 350px;
+      transition: all 0.2s ease-in-out;
 
       &:hover {
-        text-decoration: underline;
+        transform: translateX(2%);
       }
     }
   }
